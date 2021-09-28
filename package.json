@@ -1,0 +1,19 @@
+{
+  "name": "playground-20210927",
+  "version": "1.0.0",
+  "description": "Marks Awesome App",
+  "main": "myapp.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bloggermark/playground-20210927.git"
+  },
+  "author": "Mark Montoya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bloggermark/playground-20210927/issues"
+  },
+  "homepage": "https://github.com/bloggermark/playground-20210927#readme"
+}
