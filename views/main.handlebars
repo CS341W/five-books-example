@@ -1,2 +1,19 @@
 <h2>My Header Title</h2>
 <p>I want to say something here</p>
+
+<table style="border:1px solid black; border-spacing:3px;">
+<thead>
+    <tr>
+        <th>Make</th>
+        <th>Model</th>
+        <th>Year</th>
+    </tr>
+</thead>
+<tbody>
+    {{#each cars}}
+    <tr>
+        <td>{{make}}</td><td>{{model}}</td><td>{{year}}</td>
+    </tr>
+    {{/each}}
+</tbody>
+</table>
