@@ -1,0 +1,24 @@
+<h2>The First Five Books</h2>
+<p>Below is a summary data regarding the first five books of the Old Testament.</p>
+{{#if books}} {{! Note - This tag is optional, but is good to include in instances where you don't want to create a table and headers if the data is not present }}
+<table style="border:1px solid black; border-spacing:3px;">
+<thead>
+    <tr>
+        <th>Order</th>
+        <th>Title</th>
+        <th>Date</th>
+        <th>Author</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    {{#each books}}
+    <tr>
+        <td>{{Order}}</td><td>{{Title}}</td><td>{{Date}}</td>
+        <td>{{Author}}</td><td>{{Type}}</td><td>{{Summary}}</td>
+    </tr>
+    {{/each}}
+</tbody>
+</table>
+{{/if}}

@@ -2,17 +2,18 @@ const express = require("express")
 const app = express()
 const port = process.env.PORT || 3000
 const handlebars = require("express-handlebars")
-const { cars } = require("./data")
+const { books } = require("./data.js")
 app.use(express.static("public"))
-app.set("view engine", "handlebars")
+app.set("view engine", "hbs")
 app.engine(
-  "handlebars",
+  "hbs",
   handlebars({
     layoutsDir: `${__dirname}/views/layouts`,
+    defaultLayout: "index",
+    extname: "hbs",
   })
 )
 app.get("/", (req, res, next) => {
-  const { cars } = require("./data.js")
-  res.render("main", { layout: "index", cars })
+  res.render("main", { books })
 })
 app.listen(port, () => console.log(`App is listening on port ${port}`))
