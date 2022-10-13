@@ -7,7 +7,7 @@ app.use(express.static("public"))
 app.set("view engine", "hbs")
 app.engine(
   "hbs",
-  handlebars({
+  handlebars.engine({
     layoutsDir: `${__dirname}/views/layouts`,
     defaultLayout: "index",
     extname: "hbs",
